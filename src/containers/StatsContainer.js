@@ -6,11 +6,11 @@ import {changeStatsAction} from "../actions/statsActions";
 function mapStateToProps(state) {
     return {
         user: {
-            name: state.user.name
+            name: state.userReducer.user.name
         },
         stats: {
-            followers: state.stats.followers,
-            following: state.stats.following
+            followers: state.statsReducer.stats.followers,
+            following: state.statsReducer.stats.following
         }
     }
 }

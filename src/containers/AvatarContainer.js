@@ -6,8 +6,8 @@ import {bindActionCreators} from "redux";
 function mapStateToProps(state) {
     return {
         user: {
-            avatar: state.user.avatar,
-            name: state.user.name
+            avatar: state.userReducer.user.avatar,
+            name: state.userReducer.user.name
         }
     }
 }

@@ -10,8 +10,8 @@ import {combineReducers} from "redux";
 // }
 
 const rootReducer = combineReducers({
-    user: userReducer,
-    stats: statsReducer
+    userReducer,
+    statsReducer
 })
 
 export default rootReducer
