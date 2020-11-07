@@ -1,6 +1,12 @@
 import {CHANGE_STATS} from "../actions/statsActions";
+const initialState = {
+    stats: {
+        followers: 0,
+        following: 0
+    }
+}
 
-export default function statsReducer(state, action) {
+export default function statsReducer(state = initialState, action) {
     const stats = {...state};
     switch (action.type) {
         case CHANGE_STATS:
